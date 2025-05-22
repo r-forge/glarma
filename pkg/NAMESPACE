@@ -1,0 +1,42 @@
+################################################
+### Package imports
+################################################
+importFrom("MASS", "glm.nb")
+importFrom("methods", "is")
+import("datasets")
+import("grDevices")
+import("graphics")
+import("stats")
+importFrom("utils", "compareVersion", "head", "write.table")
+################################################
+### Functions
+################################################
+exportPattern("glarma")
+exportPattern("Gen")
+export(initial)
+export(mySolve)
+export(likTests, likeTests)
+export(histPIT)
+export(qqPIT)
+export(normRandPIT)
+export(forecast, forecast.glarma)
+export(glarmaSimModel)
+export(extractGlarmaSimModel)
+export(glarmaSim)
+################################################
+## S3 classes and methods
+################################################
+S3method(print, glarma)
+S3method(summary, glarma)
+S3method(print, summary.glarma)
+S3method(print, likTests)
+S3method(fitted, glarma)
+S3method(coef, glarma)
+S3method(residuals, glarma)
+S3method(extractAIC, glarma)
+S3method(logLik, glarma)
+S3method(model.frame, glarma)
+S3method(plot, glarma)
+S3method(forecast, glarma)
+S3method(nobs, glarma)
+
